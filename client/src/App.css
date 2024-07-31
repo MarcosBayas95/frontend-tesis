@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Style components */
+.header-content{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8%;
+  margin-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+/* Styles Table */
+.actions{
+  padding: 7px !important;
+  border-radius: 100% !important;
+  font-size: 1rem !important;
+}
+
+.actions .delete-icon {
+  color: red;
+}
+
+.actions .edit-icon {
+  color: #1a6ab9;
+}
+
+.actions .download-icon {
+  color: #33d15a;
+}
+
+/* Styles Search Input */
+.input-group {
+  border-radius: 20px;
+  padding: 3px;
+  width: fit-content;
+  margin-right: 5px;
+}
+
+.input-group input {
+  border: 0;
+  outline: none;
+  padding: 2px;
+  width: 200px;
+  background: #f6fafd;
+}
+
+.input-group input:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.footer{
+  display: flex;
+  justify-content: end;
+}
